@@ -1,8 +1,11 @@
 aid: a24
 name: A24
-description: 'A24 is a company surfaced as a portfolio company of thrive-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: media. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'A24 is an American independent entertainment company founded in 2012 and headquartered
+  in New York City that produces, finances, and distributes films and television, including award winners
+  such as Everything Everywhere All at Once, Moonlight, and Hereditary. Beyond production, A24 runs a
+  direct-to-consumer business spanning a merchandise shop, the AAA24 membership program, editorial
+  "Notes," podcasts, and a mobile app. A24 is a portfolio company of Thrive Capital. A24 does not publish
+  a public developer API; this profile is maintained in the API Evangelist network as a company record.'
 url: https://raw.githubusercontent.com/api-evangelist/a24/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +13,29 @@ x-backed-by:
 - thrive-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://a24films.com/favicon.ico
 tags:
 - Company
 - Media
+- Film
+- Television
+- Entertainment
+- Streaming
+- Merchandise
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/a24-domain-security.yml
 - type: Website
   url: https://a24films.com
+- type: Blog
+  url: https://a24films.com/notes
+- type: TermsOfService
+  url: https://a24films.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://a24films.com/privacy-policy
+- type: SignUp
+  url: https://aaa24.a24films.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
